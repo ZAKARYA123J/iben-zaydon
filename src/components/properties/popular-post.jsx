@@ -32,7 +32,7 @@ const Popular = () => {
         // Fetch posts and details from APIs
         const fetchData = async () => {
             try {
-                const postsResponse = await fetch('https://immoceanrepo.vercel.app/api/posts');
+                const postsResponse = await fetch('/api/posts');
                 const postsData = await postsResponse.json();
                 if (Array.isArray(postsData)) {
                     setPosts(postsData);
@@ -40,7 +40,7 @@ const Popular = () => {
                     console.error('Expected an array for posts, received:', postsData);
                 }
 
-                const detailsResponse = await fetch('https://immoceanrepo.vercel.app/api/details');
+                const detailsResponse = await fetch('/api/details');
                 const detailsData = await detailsResponse.json();
                 setDetails(detailsData);
             } catch (error) {

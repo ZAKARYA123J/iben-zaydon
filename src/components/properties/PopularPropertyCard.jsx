@@ -56,13 +56,13 @@ const PopularCard = ({ currentCategory }) => {
     const fetchData = async () => {
       try {
         const postsResponse = await fetch(
-          "https://immoceanrepo.vercel.app/api/posts"
+          "/api/posts"
         );
         const postsData = await postsResponse.json();
         setPosts(postsData);
 
         const detailsResponse = await fetch(
-          "https://immoceanrepo.vercel.app/api/details"
+          "/api/details"
         );
         const detailsData = await detailsResponse.json();
         setDetails(detailsData);

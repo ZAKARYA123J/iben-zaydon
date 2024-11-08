@@ -8,7 +8,7 @@ import Pagination from './pagination';
 import { useRouter } from 'next/router';
 import Maps from './maps';
 
-const POSTS_API_URL = 'https://immoceanrepo.vercel.app/api/posts';
+const POSTS_API_URL = '/api/posts';
 
 const PropertyList = () => {
     const showSearch = true;
