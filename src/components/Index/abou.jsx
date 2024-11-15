@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo} from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { FaHome, FaImage, FaDumbbell, FaShieldAlt } from "react-icons/fa";
@@ -6,7 +6,7 @@ import { motion } from "framer-motion"; // For animations
 
 const Abouta = () => {
     const router = useRouter();
-console.log("ez")
+
     // Badge Component
     const Badge = ({ text }) => {
         return (
@@ -165,4 +165,4 @@ console.log("ez")
     );
 };
 
-export default Abouta;
+export default memo(Abouta);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{memo} from 'react';
 import Image from 'next/image';
 import { MdSecurity , MdPermMedia } from "react-icons/md";
 import { FaSackDollar, FaClipboardList  } from "react-icons/fa6";
@@ -73,4 +73,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default memo(About);

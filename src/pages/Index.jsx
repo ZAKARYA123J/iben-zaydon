@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import { Box, Container, ChakraBaseProvider } from "@chakra-ui/react";
 import Hero from "../components/Index/Hero";
 import Layout from "../components/Index/Layout";
@@ -14,21 +14,18 @@ import Abouta from "../components/Index/abou";
 import Counters from "../components/Index/Counters";
 import CardService from '../components/service';
 import LoadingAnimation from '../components/Loading';
-import { WhatsApp } from '../components/whatssap';
+import { WhatsApp } from '../components/whatssap'
 
-
-const HomePage = ({ siteInfo }) => { // Added isLoading to the function parameters
-  const [isLoading, setIsLoading] = useState(true); // Add loading state
+const HomePage = ({ siteInfo }) => {
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate a loading process, e.g., fetching data
     const timer = setTimeout(() => {
-      setIsLoading(false); // Set loading to false after a delay
-    }, 1000); // Adjust delay as needed
+      setIsLoading(false);
+    }, 1000);
 
-    return () => clearTimeout(timer); // Cleanup the timer
+    return () => clearTimeout(timer);
   }, []);
-
 
   return (
     <ChakraBaseProvider theme={theme}>
@@ -50,12 +47,11 @@ const HomePage = ({ siteInfo }) => { // Added isLoading to the function paramete
             </Container>
           </Box>
         </Box>
-
         <Footer />
         <WhatsApp />
       </Layout>
     </ChakraBaseProvider>
-  )
+  );
 };
 
-export default HomePage;
+export default memo(HomePage);

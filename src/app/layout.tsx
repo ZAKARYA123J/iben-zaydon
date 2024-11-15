@@ -1,3 +1,4 @@
+
 export const metadata = {
   title: 'Immobilier - ImmOcean Maroc',
   description: "Un moyen facile de trouver une propriété parfaite Nous fournissons un service complet pour la vente, l'achat ou la location de biens immobiliers. Nous opérons depuis plus de 10 ans. Recherchez des millions d'appartements et de maisons sur ImmOcean",

@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { Box, Stack } from '@chakra-ui/react'
 import Container from '../components/Container'
 import Layout from '../components/Index/Layout'
@@ -29,4 +30,4 @@ const ContactUsPage = ({ siteInfo }) => {
 		</>
 	)
 }
-export default ContactUsPage
+export default memo(ContactUsPage)

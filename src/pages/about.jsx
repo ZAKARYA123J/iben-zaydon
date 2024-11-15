@@ -1,3 +1,4 @@
+    import { memo } from 'react'
 import { ChakraBaseProvider } from '@chakra-ui/react'
 import { Box, Stack, VStack } from '@chakra-ui/react'
 import About from '../components/Index/About'
@@ -21,4 +22,4 @@ const about = ({ siteInfo}) => {
         </>
     )
 }
-export default about
+export default memo(about)

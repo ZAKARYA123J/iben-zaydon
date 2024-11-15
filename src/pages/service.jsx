@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"; // Import useRef
+import React, { useState, useEffect, useRef, memo} from "react"; // Import useRef
 import { Box, Container, ChakraBaseProvider } from "@chakra-ui/react"; // Combine Chakra UI imports
 import theme from "../types/CmsSingleTypes/theme";
 import Footer from "../components/Index/Footer";
@@ -78,4 +78,4 @@ const service = ({ siteInfo }) => {
     </ChakraBaseProvider>
   );
 };
-export default service;
+export default memo(service);
