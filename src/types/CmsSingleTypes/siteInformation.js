@@ -5,7 +5,7 @@ const siteInfo = {
 		data: {
 			attributes: {
 				url: '/images/logo.jpg', // Path to the logo image
-				alternativeText: 'ImmOcean Logo', // Alt text for the logo
+				alternativeText: 'ImmOcean', // Alt text for the logo
 			},
 		},
 	},
