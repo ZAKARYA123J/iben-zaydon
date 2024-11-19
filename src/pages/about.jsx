@@ -1,4 +1,4 @@
-    import { memo } from 'react'
+import { memo } from 'react'
 import { ChakraBaseProvider } from '@chakra-ui/react'
 import { Box, Stack, VStack } from '@chakra-ui/react'
 import About from '../components/Index/About'

@@ -7,7 +7,7 @@ User-agent: BadBot
 Disallow: /
 
 # Host
-Host: https://immoceanrepo.vercel.app/Index
+Host: https://immocean.ma
 
 # Sitemaps
-Sitemap: https://immoceanrepo.vercel.app/Index/sitemap.xml
+Sitemap: https://immocean.ma/sitemap.xml

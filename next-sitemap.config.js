@@ -1,5 +1,5 @@
 module.exports = {
-    siteUrl: 'https://immoceanrepo.vercel.app/Index', // Replace with your site URL
+    siteUrl: 'https://immocean.ma', // Replace with your site URL
     generateRobotsTxt: true,           // Automatically generate robots.txt
     changefreq: 'daily',               // Change frequency (optional)
     priority: 0.7,                     // Default priority for pages (optional)

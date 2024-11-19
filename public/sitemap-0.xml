@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://immoceanrepo.vercel.app/Index/Index</loc><lastmod>2024-11-18T09:02:59.001Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://immoceanrepo.vercel.app/Index/about</loc><lastmod>2024-11-18T09:02:59.003Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://immoceanrepo.vercel.app/Index/contact</loc><lastmod>2024-11-18T09:02:59.003Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://immoceanrepo.vercel.app/Index/gallery</loc><lastmod>2024-11-18T09:02:59.003Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://immoceanrepo.vercel.app/Index/properties</loc><lastmod>2024-11-18T09:02:59.003Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://immoceanrepo.vercel.app/Index/service</loc><lastmod>2024-11-18T09:02:59.003Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://immocean.ma/Index</loc><lastmod>2024-11-19T11:24:03.514Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://immocean.ma/about</loc><lastmod>2024-11-19T11:24:03.516Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://immocean.ma/contact</loc><lastmod>2024-11-19T11:24:03.516Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://immocean.ma/gallery</loc><lastmod>2024-11-19T11:24:03.516Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://immocean.ma/properties</loc><lastmod>2024-11-19T11:24:03.516Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://immocean.ma/service</loc><lastmod>2024-11-19T11:24:03.516Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
