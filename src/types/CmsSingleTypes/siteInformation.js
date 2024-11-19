@@ -34,7 +34,7 @@ const siteInfo = {
 		
 	],
     footerLeft: "<p>Welcome to our website!</p>",
-    realEstateWebsite: "https://example.com",
+    realEstateWebsite: "https://immocean.ma",
     headshot: {
         data: {
             attributes: {
@@ -57,7 +57,7 @@ const siteInfo = {
                     }
                 },
                 url: "/images/logo.jpg", // Relative path for default format
-                alternativeText: "Real estate logo"
+                alternativeText: "Real estate"
             }
         }
     }

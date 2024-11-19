@@ -55,7 +55,7 @@ const Naavbar = () => {
         >
           <Image
             src="/images/logoo.png"
-            alt="logo"
+            alt="Immocean"
             width={200}          // Set a numeric width for aspect ratio
             height={40}         // Set a numeric height for aspect ratio
           />
