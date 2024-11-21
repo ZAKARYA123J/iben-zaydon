@@ -188,7 +188,7 @@ const PropertyList = () => {
                         colorScheme='ble.600'
                         background="blue.600" // Changed button background color to blue.600
                         color="white" // Changed text color to white
-                        rightIcon={<img src={isMapView ? "/images/detail.png" : "/images/maps.png"} alt="Icon" style={{ 
+                        rightIcon={<img src={isMapView ? "/images/maps.png": "/images/detail.png"  } alt="Icon" style={{ 
                             width: '35px', 
                             height: '35px', 
                             border: ' solid white', 
@@ -196,12 +196,12 @@ const PropertyList = () => {
                             backgroundColor: 'white' 
                         }} />} 
                     >
-                        {isMapView ? 'Afficher  List' : 'Afficher  Map'}
+                        {isMapView ? 'Afficher  Map' :'Afficher  List' }
                     </Button>
                 </Box>
             )}
             <Box display="flex" style={{ height: '100vh' }}>
-                {(isMapView || !isMobileView) && (
+                {(!isMapView || !isMobileView) && (
                     <Box flex="1" position="sticky" top="0" height="100%" w="full" overflow="hidden">
                         <Maps
                             center={[31.7917, -7.0926]}
@@ -238,7 +238,7 @@ const PropertyList = () => {
                         />
                     </Box>
                 )}
-                {(!isMapView || !isMobileView) && (
+                {(isMapView || !isMobileView) && (
                     <Box flex="1" overflowY="auto" p={4}>
                         <Box display="flex" justifyContent="center">
                             {currentItems.length > 0 ? (
