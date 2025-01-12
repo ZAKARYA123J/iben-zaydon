@@ -55,7 +55,7 @@ useEffect(() => {
                 <Popup>
                   <div className="flex w-64 h-40">
                     <div className="w-2/5 h-full relative">
-                      <Link href={`/properties?modal=yes&id=${marker.id}`}>
+                      <Link href={marker.link}>
                         <Image
                           src={marker.imageUrl}
                           alt={marker.title}
