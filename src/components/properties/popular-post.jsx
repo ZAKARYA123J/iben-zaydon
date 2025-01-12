@@ -132,18 +132,7 @@ const Popular = () => {
             </Box>
 
             {/* Filter Buttons */}
-            {gridDisplay && ( // Render only if gridDisplay is true
-                <Flex mb={4} wrap="wrap" justifyContent="center">
-                    <Button onClick={() => handleFilterTypeChange('All')} m={2} colorScheme={filterType === 'All' ? 'blue' : 'gray'}>
-                        View All
-                    </Button>
-                    {uniqueTypes.map(type => (
-                        <Button key={type} onClick={() => handleFilterTypeChange(type)} m={2} colorScheme={filterType === type ? 'blue' : 'gray'}>
-                            {type}
-                        </Button>
-                    ))}
-                </Flex>
-            )}
+        
 
 
             {gridDisplay ? (

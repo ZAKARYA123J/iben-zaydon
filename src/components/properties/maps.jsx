@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
-import { Box } from "@chakra-ui/react";
+import { Box ,Button} from "@chakra-ui/react";
 import Image from 'next/image';
 import "leaflet/dist/leaflet.css";
 import Link from 'next/link';
@@ -15,20 +15,21 @@ const ZoomControl = dynamic(() => import("react-leaflet").then(mod => mod.ZoomCo
 export default function Maps({ center, markers = [] }) {
   const [iconCache, setIconCache] = useState({});
 
-  useEffect(() => {
+useEffect(() => {
     import("leaflet").then(L => {
-      const iconUrl = '/images/Appartement.svg';
-      if (!iconCache[iconUrl]) {
-        const icon = L.icon({
-          iconUrl: iconUrl,
-          iconSize: [32, 32],
-          iconAnchor: [16, 32],
-          popupAnchor: [0, -32]
-        });
-        setIconCache(prevCache => ({ ...prevCache, [iconUrl]: icon }));
-      }
+        const iconUrl = '/images/Appartement.svg';
+        if (!iconCache[iconUrl]) {
+            const icon = L.icon({
+                iconUrl: iconUrl,
+                iconSize: [32, 32],
+                iconAnchor: [16, 32],
+                popupAnchor: [0, -32]
+            });
+            setIconCache(prevCache => ({ ...prevCache, [iconUrl]: icon }));
+        }
     });
-  }, [iconCache]);
+}, []); // Empty dependency array to avoid recalculating icon on every render
+
 
   return (
     <Box maxW="7xl" mx="auto" p={4}>
@@ -69,8 +70,18 @@ export default function Maps({ center, markers = [] }) {
                         <h3 className="text-md font-bold text-blue-600">{marker.title}</h3>
                       </Link>
                       <p className="text-sm text-gray-600 mb-1">{marker.adress}</p>
-                      <Link href={`/properties?modal=yes&id=${marker.id}`}>
-                        <p className="text-md font-bold text-blue-600">{marker.price}</p>
+                      
+                      {/* Button for the link */}
+                      <Link href={marker.link}>
+                        <Button
+                          colorScheme="blue"
+                          size="sm"
+                          variant="outline"
+                          w="full"
+                          mt={2}
+                        >
+                          View 
+                        </Button>
                       </Link>
                     </div>
                   </div>

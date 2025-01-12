@@ -21,7 +21,7 @@ module.exports = {
     return [
       {
         source: '/',
-        destination: '/Index',
+        destination: '/properties',
         permanent: true,
       },
     ];
