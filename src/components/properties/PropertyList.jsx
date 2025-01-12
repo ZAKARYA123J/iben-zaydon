@@ -16,6 +16,7 @@ const PropertyList = () => {
         id: 1,
         position: mapCenter,
         title: 'Ibn Zaydoun',
+        imageUrl: '/images/ibn.jpg',
         address: 'Location Address',
         link: 'https://my.matterport.com/show/?m=EQMUt4KGE3k&back=1',
     };
@@ -28,28 +29,7 @@ const PropertyList = () => {
 
     return (
         <Box>
-            {isMobileView && (
-                <Box
-                    display={{ base: 'block', md: 'none' }}
-                    textAlign="center"
-                    mb={4}
-                    position="fixed"
-                    bottom={0}
-                    left="50%"
-                    transform="translateX(-50%)"
-                    zIndex={1}
-                >
-                    <Button
-                        onClick={toggleView}
-                        size="lg"
-                        colorScheme="blue"
-                        background="blue.600"
-                        color="white"
-                    >
-                        {isMapView ? 'Afficher Map' : 'Afficher List'}
-                    </Button>
-                </Box>
-            )}
+         
             <Box display="flex" style={{ height: '100vh' }}>
                 <Box flex="1" position="relative" w="full" overflow="hidden">
                     <Maps
